@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Example to declare and use functions
 float sum(float num1, float num2);
 
 int main(void)
