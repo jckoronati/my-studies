@@ -1,6 +1,5 @@
 <?php
 
-//Calls main function
 $value = readline('Digite um valor ');
 
 prints((int) $value);
