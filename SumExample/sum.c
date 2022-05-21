@@ -1,16 +1,20 @@
 #include <stdio.h>
 
-float sum();
+float sum(float num1, float num2);
 
-int main(void) {
-    float num1, num2, sum;
+int main(void)
+{
+    float num1, num2;
 
-    scanf("%f",&num1);
-    scanf("%f",&num2);
+    scanf("%f", &num1);
+    scanf("%f", &num2);
 
-    sum = num1 + num2;
-
-    printf("%f \n",sum);
+    printf("%f \n", sum(num1, num2));
 
     return 0;
+}
+
+float sum(float num1, float num2)
+{
+    return num1 + num2;
 }
