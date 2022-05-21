@@ -19,4 +19,4 @@ int main()
     return 0;
 }
 
-// This algorithm are used on course: https://www.udemy.com/course/curso-completo-de-logica-e-programacao/
+// This algorithm was used on course: https://www.udemy.com/course/curso-completo-de-logica-e-programacao/
