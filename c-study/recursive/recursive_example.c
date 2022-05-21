@@ -9,7 +9,6 @@ void prints(int number)
         printf("%d ", number);
         prints(number - 1);
         printf("%d ", number);
-        printf("\n");
     }    
 }
 
@@ -19,5 +18,6 @@ int main()
     printf("Enter a number greater than 0: ");
     scanf("%d",&number);
     prints(number);
+    printf("\n");
     return 0;
 }
