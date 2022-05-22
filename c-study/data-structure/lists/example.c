@@ -23,7 +23,7 @@ void createPoint(float x, float y)
     list = p;
 }
 
-void prints()
+void prints(void)
 {
     Point *auxiliaryList = list;
 
