@@ -23,6 +23,30 @@ void createPoint(float x, float y)
     list = p;
 }
 
+void createPointAndAddToLast(float x, float y)
+{
+    Point *p = (Point *)malloc(sizeof(Point));
+    p->x = x;
+    p->y = y;
+    p->next = NULL;
+
+    if (list == NULL)
+    {
+        list = p;
+    }
+    else
+    {
+        Point *anotherAuxiliaryList = list;
+
+        while (anotherAuxiliaryList->next!=NULL)
+        {
+            anotherAuxiliaryList = anotherAuxiliaryList->next;
+        }
+
+        anotherAuxiliaryList->next = p;
+    }
+}
+
 void prints(Point *aux)
 {
     if (aux != NULL)
@@ -36,6 +60,8 @@ int main(void)
 {
     createPoint(6, 2);
     createPoint(1, 5);
+    createPointAndAddToLast(0, 1);
+    createPoint(8, 9);
 
     Point *auxiliaryList = list;
     prints(auxiliaryList);
