@@ -7,7 +7,7 @@ struct point {
     float y;
 };
 
-// implemented def for simplife use
+// implemented def for simplify use
 typedef struct point Point;
 
 int main(void)
