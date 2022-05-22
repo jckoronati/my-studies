@@ -23,14 +23,12 @@ void createPoint(float x, float y)
     list = p;
 }
 
-void prints(void)
+void prints(Point *aux)
 {
-    Point *auxiliaryList = list;
-
-    while (auxiliaryList != NULL)
+    if (aux != NULL)
     {
-        printf("\nPonto (%.2f, %.2f) ", auxiliaryList->x, auxiliaryList->y);
-        auxiliaryList = auxiliaryList->next;
+        printf("\n Ponto (%.2f, %.2f)", aux->x, aux->y);
+        prints(aux->next);
     }
 }
 
@@ -38,7 +36,10 @@ int main(void)
 {
     createPoint(6, 2);
     createPoint(1, 5);
-    prints();
+
+    Point *auxiliaryList = list;
+    prints(auxiliaryList);
+
     printf("\n");
     return 0;
 }
