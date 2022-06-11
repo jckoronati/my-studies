@@ -47,6 +47,10 @@ void createPointAndAddToLast(float x, float y)
     }
 }
 
+void removeIndex(int index) 
+{
+}
+
 void prints(Point *aux)
 {
     if (aux != NULL)

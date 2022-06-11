@@ -1,0 +1,85 @@
+:root {
+    --white: #fff;
+    --gray-50: #F7F7F7;
+    --gray-300: #B5B5B5;
+    --blue-100: #066a75;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.form {
+    background-color: var(--gray-50);
+    border-color: var(--blue-100);
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 0.035rem;
+    max-width: 315px;
+    width: 80vw;
+    padding: 0.75rem 0.95rem;
+}
+
+.form__title {
+    color: var(--blue-100);
+    font-size: 1.65rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+#formPerson {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#formPerson label {
+    color: var(--blue-100);
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
+}
+
+#formPerson input, #formPerson select {
+    outline-color: var(--blue-100);
+    padding: 0.256rem;
+    box-shadow: inset 9px 8px 10px -8px var(--gray-300);
+    border-color: var(--gray-300);
+    border-radius: 0.12rem;
+    border-width: 0.05rem;
+    margin-bottom: 0.25rem;
+    width: 97%;
+}
+
+#formPerson #role {
+    width: 95%;
+}
+
+#formPerson input::-webkit-input-placeholder, #form input::placeholder {
+    font-style: italic;
+} 
+
+#btnForm {
+    background-color: var(--blue-100);
+    border: 0;
+    color: var(--white);
+    margin-top: 0.75rem;
+    width: 100%;
+    padding: 0.25rem 0;
+}
+
+#btnForm:hover {
+    cursor: pointer;
+    filter: brightness(0.85);
+}

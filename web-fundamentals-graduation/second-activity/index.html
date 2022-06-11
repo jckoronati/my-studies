@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RH - Cadastro de Pessoa</title>
+</head>
+<body>
+    <main>
+        <section class="form">
+            <h3 class="form__title">Cadastro de <br> Funcionário</h3>
+            <form id="formPerson" action="post">
+                <label for="name">Seu nome</label>
+                <input id="name" name="name" placeholder="nome" type="text" required="true">
+                <label for="email">Seu email</label>
+                <input id="email"" name="email" placeholder="contato@qi" type="email" required="true">
+                <label for="birth">Sua data de nascimento</label>
+                <input id="birth" name="birth" type="date" required="true" min="1940-01-01" max="2030-11-10">
+                <label for="wage">Seu salário</label>
+                <input id="wage" name="wage">
+                <label for="role">Seu cargo</label>
+                <select name="role" id="role" >
+                    <option value="">
+                        selecione...
+                    </option>
+                    <option value="Gerente">
+                        Gerente
+                    </option>
+                    <option value="Analista de Sistemas">
+                        Analista de Sistemas
+                    </option>
+                    <option value="Desenvolvedor">
+                        Desenvolvedor
+                    </option>
+                    <option value="DBA">
+                        DBA
+                    </option>
+                </select>
+                <label for="totalAmount">Total Salário</label>
+                <input id="totalAmount" name="totalAmount" required="true" disabled="true">
+                <button type="submit" id="btnForm">
+                    Gravar
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="client/ui/converter/DateConverter.js"></script>
+    <script src="client/domain/person/Person.js"></script>
+    <script src="client/controller/PersonController.js"></script>
+    <script src="client/app.js"></script>
+</body>
+</html>
