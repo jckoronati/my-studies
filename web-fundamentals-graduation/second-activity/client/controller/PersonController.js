@@ -23,7 +23,13 @@ class PersonController {
     }
 
     change(event) {
-        
+        if (event.target.id === "role" && this.wage.value === "") {
+            this.calculateWageBase(event.target.value);
+        }
+
+        if (event.target.id === "wage") {
+            this.totalAmount.value = this.wage.value * 12;
+        }
     }
 
     _resetForm() {
@@ -33,5 +39,37 @@ class PersonController {
         this.wage.value = "";
         this.role.value = "";
         this.totalAmount.value = "";
+    }
+
+    calculateWageBase(value) {
+        if (value === "Gerente") {
+            const wage = 21000.00;
+            let wageAmount = wage * 0.1;
+
+            this.wage.value = wage + wageAmount;
+            this.totalAmount.value = this.wage.value * 12;
+        }
+
+        if (value === "Analista de Sistemas") {
+            const wage = 11000.00;
+            let wageAmount = wage * 0.05;
+
+            this.wage.value = wage + wageAmount;
+            this.totalAmount.value = this.wage.value * 12;
+        }
+
+        if (value === "Desenvolvedor") {
+            const wage = 9500.00;
+
+            this.wage.value = wage;
+            this.totalAmount.value = this.wage.value * 12;
+        }
+
+        if (value === "DBA") {
+            const wage = 10500.00;
+
+            this.wage.value = wage;
+            this.totalAmount.value = this.wage.value * 12;
+        }
     }
 }
