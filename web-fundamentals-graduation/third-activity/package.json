@@ -1,0 +1,15 @@
+{
+  "name": "third-activity",
+  "version": "1.0.0",
+  "description": "simple cli application",
+  "main": "app.js",
+  "author": "Júlio Cezar Koronati",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node --experimental-network-imports app.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
