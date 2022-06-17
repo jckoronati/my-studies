@@ -9,7 +9,5 @@
     "dev": "node --experimental-network-imports app.js"
   },
   "type": "module",
-  "dependencies": {
-    "inquirer": "^8.2.4"
-  }
+  "dependencies": {}
 }
