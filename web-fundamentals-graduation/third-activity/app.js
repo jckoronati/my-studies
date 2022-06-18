@@ -13,7 +13,7 @@ function main() {
     });
 
 
-    readlineInterface.question("1 - Criar conta \n 2 - Sair \n", (condition) => {
+    readlineInterface.question("1 - Criar conta \n2 - Sair \n", (condition) => {
         if (condition == 1) {
             readlineInterface.question("--- Qual número da conta?", (number) => {
                 readlineInterface.question("--- Qual o saldo inicial dessa conta? ", (initialBalance) => {
