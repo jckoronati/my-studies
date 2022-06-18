@@ -6,7 +6,7 @@ console.log("---BANCO XPTO---");
 
 main();
 
-async function main() {        
+function main() {        
     const readlineInterface = readline.createInterface({
         input: process.stdin,
         output: process.stdout
