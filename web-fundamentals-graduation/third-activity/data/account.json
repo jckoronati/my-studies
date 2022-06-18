@@ -2,17 +2,5 @@
     {
         "number": 1,
         "initialBalance": 580.9
-    },
-    {
-        "_number": 2,
-        "_initialBalance": 500
-    },
-    {
-        "_number": 3,
-        "_initialBalance": 500
-    },
-    {
-        "_number": 4,
-        "_initialBalance": 500
     }
 ]
