@@ -1,0 +1,12 @@
+<section class="container">
+    <h1>Veja a lista dos mais vendidos: </h1>
+    <div class="list">    
+        {{#each books}}
+        <li class="list__item">
+            <h2>{{this.name}}</h2>
+            <p>R$ {{this.price}}</p>
+            <a href="/book/{{this.id}}">Ver mais</a>
+        </li>
+        {{/each}}
+    </div>
+</section>
