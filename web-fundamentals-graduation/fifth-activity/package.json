@@ -1,0 +1,18 @@
+{
+  "name": "fifth-activity",
+  "version": "1.0.0",
+  "description": "Simple project to show the bestseller list",
+  "main": "index.js",
+  "author": "Júlio Cezar Koronati",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
