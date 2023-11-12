@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+    font-size: 14px;
+    text-align: center;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+.first__paragraph {
+    color: cadetblue;
+}
+
+.second__paragraph {
+    color: brown;
+}
